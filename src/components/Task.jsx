@@ -3,7 +3,6 @@ import { MdDelete } from 'react-icons/md';
 import { useContext } from 'react';
 import { noteContext } from '../context/Context';
 const Task = () => {
-
   const noteRef = useContext(noteContext);
   let actualNote = noteRef.note;
 
@@ -19,7 +18,6 @@ const Task = () => {
               let noteNew = [...actualNote];
               noteNew[index].status = !noteNew[index].status;
               noteRef.setnote(noteNew);
-              console.log(actualNote);
             }}
             className={` bg-${
               actualNote[index].status ? 'green-700' : '[#C3B49B]'
@@ -35,8 +33,6 @@ const Task = () => {
           </h1>
           <div
             onClick={() => {
-              console.log('item Deleted');
-              console.log(index);
               let deltArr = [...actualNote];
               deltArr.splice(index, 1);
               noteRef.setnote(deltArr);

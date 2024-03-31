@@ -10,7 +10,10 @@ const Stats = () => {
   console.log(statusNum);
 
   return (
-    <div className='text-[#C3B49B] text-center border border-[#C3B49B] flex justify-center items-center gap-10 mt-[50px] p-5 w-[350px] rounded-xl   '>
+    <div
+      id='stats'
+      className='text-[#C3B49B] text-center border border-[#C3B49B] flex justify-center items-center gap-10 mt-[50px] p-5 w-[350px] rounded-xl   '
+    >
       <div className='text-2xl'>
         <p>Task =</p>
         <p className='italic'>keep it up</p>

@@ -5,7 +5,7 @@ const Header = () => {
   const [menu, setmenu] = useState(true);
 
   return (
-    <div className='text-white  flex justify-start  items-center gap-[220px] mt-10'>
+    <div  className='text-white  flex justify-start  items-center gap-[220px] mt-10'>
       <div>
         <h1 className='text-xl font-bold  text-[#C3B49B]'>
           Hero<span className=' text-orange-700'>TODO</span>
