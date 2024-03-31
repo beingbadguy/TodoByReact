@@ -1,0 +1,17 @@
+* {
+  /* font-family: 'Satoshi', sans-serif; */
+  /* font-family: 'Clash Display', sans-serif; */
+  /* font-family: 'Stardom', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Pencerio', cursive;
+}
+h1,
+span,
+input,
+ul,
+li {
+  font-family: 'General Sans', sans-serif;
+}
+/* p {
+  font-family: 'Poppins', sans-serif;
+} */
