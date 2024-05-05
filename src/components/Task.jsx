@@ -1,10 +1,14 @@
 import { MdDelete } from 'react-icons/md';
 // import { useState } from 'react';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { noteContext } from '../context/Context';
 const Task = () => {
   const noteRef = useContext(noteContext);
   let actualNote = noteRef.note;
+  useEffect(() => {
+    localStorage.setItem('todo', JSON.stringify(actualNote));
+  }, [actualNote]);
+  console.log(actualNote);
 
   return (
     <div className='text-white  flex flex-col md:flex-row md:flex-wrap   gap-10  mb-20 justify-center '>
