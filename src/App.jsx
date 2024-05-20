@@ -4,7 +4,7 @@ import Todo from './components/Todo';
 import Task from './components/Task';
 function App() {
   return (
-    <div className='min-h-[94vh] md:min-h-[100vh] bg-black  flex flex-col text-center items-center select-none'>
+    <div className='min-h-[94vh] md:min-h-[100vh]  bg-black  flex flex-col text-center items-center select-none overflow-x-hidden'>
       <Header />
       <Stats />
       <Todo />

@@ -11,7 +11,7 @@ const Task = () => {
   console.log(actualNote);
 
   return (
-    <div className='text-white  flex flex-col md:flex-row md:flex-wrap   gap-10  mb-20 justify-center '>
+    <div className='text-white  flex flex-col md:flex-row md:flex-wrap   gap-10  mb-20 justify-center  '>
       {actualNote.map((item, index) => (
         <div
           key={index}
@@ -27,14 +27,17 @@ const Task = () => {
               actualNote[index].status ? 'green-700' : '[#C3B49B]'
             }  w-[20px] h-[20px] absolute rounded-full cursor-pointer`}
           ></div>
-          <h1
-            key={index}
-            className={`text-[#C3B49B] ml-10  text-left text-md bg-red ${
-              actualNote[index].status ? 'line-through' : ''
-            }`}
-          >
-            {item.body}
-          </h1>
+          <div className=''>
+            <h1
+              key={index}
+              className={`text-[#C3B49B] ml-10 overflow-hidden  text-left text-md bg-red max-w-[80%] h-auto   ${
+                actualNote[index].status ? 'line-through' : ''
+              }`}
+            >
+              {item.body}
+            </h1>
+          </div>
+
           <div
             onClick={() => {
               let deltArr = [...actualNote];
